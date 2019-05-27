@@ -1,0 +1,262 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.4em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #656565;
+    font-family: 'Helvetica Neue LT Std', 'Arial', sans-serif;
+}
+
+body * {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    font-weight: 300;
+    font-family: 'Fugaz One', cursive;
+}
+
+h1 {
+    color: #5AEDAA;
+    font-size: 4em;
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    color: #5AEDAA;
+    transition-duration: 0.2s;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+img {
+    object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/* Forms */
+form {
+    align-items: center;
+}
+
+form * {
+    width: 100%;
+}
+
+form a {
+    align-items: center;
+}
+
+label {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    font-size: 1em;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    border: none;
+}
+
+input:not(last-child) {
+    margin-bottom: 0.5rem;
+}
+
+
+input[type=email], input[type=password] {
+    border: 1px solid #656565;
+    padding: 0 1rem;
+}
+
+::placeholder {
+    color: #CCCCCC;
+}
+
+/* Call to action buttons */
+input[class^=cta] {
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+
+    /* Green */
+    input.cta-green {
+        color: #FFFFFF;
+        background-color: #5AEDAA;
+    }
+
+    input.cta-green:hover {
+        background-color: #5AEDAA;
+        transition-duration: 0.2s;
+    }
+
+    /* Red */
+    input.cta-red {
+        color: #FFFFFF;
+        background-color: #ED5A5A;
+    }
+
+    input.cta-red:hover {
+        background-color: #ED5A5A;
+        transition-duration: 0.2s;
+    }
+
+    /* White */
+    input.cta-white{
+        color: #656565;
+        background-color: #FFFFFF;
+        border: 1px solid #656565;
+    }
+
+    input.cta-white:hover {
+        background-color: #EEEEEE;
+        transition-duration: 0.2s;
+    }
+
+button {
+    background: none;
+    border: none;
+    font-size: 1em;
+}
+
+/* Icons */
+.icon {
+    height: 2rem;
+    width: 2rem;
+    background-color: #5AEDAA;
+    border: none;
+}
+
+/* Header */
+header {
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main */
+main {
+    flex-grow: 1;
+    margin-top: -1.25rem;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    background: #FFFFFF;
+}
+
+/* Articles */
+article {
+    flex-direction: row;
+    background-color: #CCCCCC;
+    border-radius: 1.25rem;
+}
+
+article:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+article > button:first-of-type {
+    flex-direction: row;
+    flex-grow: 1;
+    background: none;
+    border: none;
+    text-align: initial;
+}
+
+.article-thumbnail {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1.25rem;
+}
+
+.article-text {
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+.article-comment {
+    width: 6rem;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    background-image: url('../images/icons/chat-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem;
+}
+
+.comment {
+    background-image: url('../images/richay.jpg');
+}
+
+/* Footer */
+footer {
+    flex-grow: 0.5;
+    justify-content: center;
+    align-items: center;
+    color: #CCCCCC;
+}
+
+/* LOGIN PAGE */
+.login > header {
+    flex-grow: 1;
+}
+
+.login-form {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.login-alternatives {
+    border-top: 1px solid #CCCCCC;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* PROFILE PAGE */
+.profile > header {
+    height: 12rem;
+    background-image: url('../images/food-on-table.jpg');
+}
+
+.profile > main > header {
+    margin-top: -5.8rem; /* Profile image height + (border width * 2) */
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.profile > main > section {
+    border-top: 1px solid #CCCCCC;
+    padding: 2rem 0;
+}
+
+.profile-image {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    border-radius: 5rem;
+    border: 0.4rem solid #FFFFFF;
+}
